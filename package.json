@@ -1,0 +1,30 @@
+{
+  "version": "0.1.0",
+  "name": "express-fields-validator",
+  "description": "express fields validator middleware",
+  "scripts": {
+    "test": "mocha --require intelli-espower-loader ./tests/test.js",
+    "start": "npm run demo",
+    "demo": "nodemon ./example/index.js",
+    "pre-commit":"npm run test"
+  },
+  "keywords": [
+    "express",
+    "middleward",
+    "validate",
+    "validator",
+    "fields-validate"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^4.0.1",
+    "power-assert": "^1.4.4",
+    "request": "^2.83.0"
+  },
+  "dependencies": {
+    "verror": "^1.10.0"
+  }
+}
