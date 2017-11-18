@@ -10,7 +10,7 @@
   },
   "keywords": [
     "express",
-    "middleward",
+    "middleware",
     "validate",
     "validator",
     "fields-validate"

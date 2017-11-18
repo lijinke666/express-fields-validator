@@ -1,15 +1,18 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const apiHandler = require('./apiHandler')
-const errorHandler = require('./errorHandler')
+const apiHandler = require('./middleware/apiHandler')
+const errorHandler = require('./middleware/errorHandler')
 const { validator, transFetchBody } = require('../lib')
 
 app.use(bodyParser.json())
 // app.use(transFetchBody)
 app.use(validator(1,2,3))
 
-app.use('/api', require('./route'))
+app.use('/api', [
+    require('./router/route1'),
+    require('./router/route2')
+])
 
 app.use(apiHandler)
 app.use(errorHandler)
