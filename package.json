@@ -6,7 +6,7 @@
     "test": "mocha --require intelli-espower-loader ./tests/test.js",
     "start": "npm run demo",
     "demo": "nodemon ./example/index.js",
-    "pre-commit":"npm run test"
+    "pre-commit": "npm run test"
   },
   "keywords": [
     "express",
@@ -25,6 +25,7 @@
     "request": "^2.83.0"
   },
   "dependencies": {
+    "express-validator": "^4.3.0",
     "verror": "^1.10.0"
   }
 }
