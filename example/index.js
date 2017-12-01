@@ -3,11 +3,15 @@ const bodyParser = require('body-parser')
 const app = express()
 const apiHandler = require('./middleware/apiHandler')
 const errorHandler = require('./middleware/errorHandler')
+const path = require('path')
 const { validator, transFetchBody } = require('../lib')
 
 app.use(bodyParser.json())
 // app.use(transFetchBody)
-app.use(validator(1,2,3))
+app.use(validator({
+    entry:path.resolve(__dirname,'../example'),
+    prefix:"/api"
+}))
 
 app.use('/api', [
     require('./router/route1'),

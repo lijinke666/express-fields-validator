@@ -8,5 +8,5 @@ module.exports = function(req,res,next){
             message:"SUCCESS"
         }
     }
-    res.status(err.status || 200).send(resultData)
+    res.status(res.status || 200).send(resultData)
 }

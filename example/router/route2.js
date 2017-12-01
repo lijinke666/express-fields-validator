@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-router.post('/route2', (req, res, next) => {
+router.post('/route3', (req, res, next) => {
     const {
         id,
         name,

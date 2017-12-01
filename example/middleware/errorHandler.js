@@ -7,5 +7,5 @@ module.exports = function(err,req,res,next){
             message:err && err.message || ""
         }
     }
-    res.status(err.status || 500).send(resultData)
+    res.status(err && err.status || 500).send(resultData)
 }

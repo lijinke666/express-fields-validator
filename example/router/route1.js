@@ -4,7 +4,7 @@ const { check, validationResult } = require('express-validator/check');
 
 
 router.get('/route1', (req, res, next) => {
-    const { route1Id } = req.query
+    const { route1Id="111" } = req.query
     res.resRawData = route1Id
     next()
 })
