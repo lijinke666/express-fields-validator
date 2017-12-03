@@ -26,7 +26,7 @@ const PORT = 8080
 app.set('port', process.env.PORT || PORT);
 const port = app.get('port')
 
-const serverRuningInfo = `express-fields-validator is running at port:${port}`
+const serverRunningInfo = `express-fields-validator is running at port:${port}`
 app.listen(port, () => {
-    console.log(serverRuningInfo);
+    console.log(serverRunningInfo);
 })

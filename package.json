@@ -3,7 +3,7 @@
   "name": "express-fields-validator",
   "description": "express fields validator middleware",
   "scripts": {
-    "test": "mocha --require intelli-espower-loader ./tests/test.js",
+    "test": "mocha --require intelli-espower-loader ./tests/*.js",
     "start": "npm run demo",
     "demo": "nodemon ./example/index.js",
     "pre-commit": "npm run test"
@@ -25,7 +25,7 @@
     "request": "^2.83.0"
   },
   "dependencies": {
-    "express-validator": "^4.3.0",
+    "validator": "^9.1.2",
     "verror": "^1.10.0"
   }
 }

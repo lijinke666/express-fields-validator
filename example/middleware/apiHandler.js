@@ -8,5 +8,6 @@ module.exports = function(req,res,next){
             message:"SUCCESS"
         }
     }
+    console.log(resultData);
     res.status(res.status || 200).send(resultData)
 }
